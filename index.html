@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="src/Styles/style.css">
+</head>
+<body>
+    <div class="all">
+    <div class="container">
+        <form class="search">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="search"  name="city-name" class="city-name" placeholder="Buscar cidade">
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <div class="weather">
+            <h1 class="tittle"> Petrolina, BR</h1>
+            <div class="infos">
+                <div class="temp">
+                    <img class="temp-img" src="" alt="">
+                    <div>
+                        <p class="temp-value">
+                            32 <sup> ºC</sup>
+                        </p>
+                        <p class="temp-description">
+                            Ensolarado
+                        </p>
+                    </div>
+                </div>
+                <div class="other-infos">
+                    <div class="info">
+                        <i id="temp-max-icon" class="fa-solid fa-temperature-high"></i>
+                        <div>
+                            <h2>Temp - Max</h2>
+                            <p class="temp-max">32 <sup> ºC</sup></p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <i id="temp-min-icon" class="fa-solid fa-temperature-high"></i>
+                        <div>
+                            <h2>Temp - Min</h2>
+                            <p class="temp-min">12 <sup> ºC</sup></p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <i id="humidity-icon" class="fa-solid fa-droplet"></i>
+                        <div>
+                            <h2>Humidade</h2>
+                            <p class="humidity">50%</p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <i id="wind-icon" class="fa-solid fa-wind"></i>
+                        <div>
+                            <h2>Vento</h2>
+                            <p class="wind">50 Km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alert">
+
+        </div>
+        
+        <div class="allwaves">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="wave wave4"></div>
+        </div>
+        
+    </div>
+    <div class="christian">
+        &copy; Christian Gabriel
+    </div>
+</div>
+
+    <script src="src/Scripts/Script.js"></script>
+</body>
+</html>

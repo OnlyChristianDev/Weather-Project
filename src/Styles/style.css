@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'poppins', "Arial";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(#2d64bd,#3960c4);
+}
+.all {
+    
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    background-color: white;
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.352);
+}
+.search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    padding: 4px 12px;
+}
+.search input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    width: 100%;
+}
+.search button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.weather {
+    display: none;
+    margin-top: 20px;
+
+}
+.weather.show {
+    display: block;
+}
+.weather .tittle {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 600;
+    color: #372f3f;
+}
+.temp {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    background: linear-gradient(90deg, #5a7cdc, #606dde);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px;
+}
+.temp-img {
+    filter: drop-shadow(2px 2px 2px #00000046);
+}
+.temp-value {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 55px;
+}
+
+.temp-description {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.other-infos {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.other-infos .info {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 4px 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.321);
+    background-color: rgb(255, 255, 255);
+    gap: 10px;
+}
+
+.other-infos .info h2 {
+    font-size: 12px;
+    font-weight: 00;
+
+}
+.other-infos .infos i {
+    text-align: center;
+    font-size: 20px;
+    width: 20%;
+}
+#temp-max-icon {
+    color: #7f1d1d ;
+}
+#temp-min-icon {
+   color: #0284c7; 
+}
+#humidity-icon {
+    color: #0ea5ea ;
+}
+#wind-icon {
+    color: #0284c7;
+}
+.alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.allwaves .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}
+.allwaves .wave.wave1 {
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+.allwaves .wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  input[type="search"]::-moz-search-cancel-button {
+    display: none;
+  }
+  input[type="search"]::-ms-clear {
+    display: none;
+  }
+.christian {
+    margin-top: 10px;
+    color: white;
+    filter: brightness(0.8);
+}
